@@ -3,8 +3,11 @@ using System.Runtime.Serialization;
 
 namespace HttpRequestException
 {
+  //
+  // Summary:
+  //     The bad request exception.
   [Serializable]
-  public class ForbiddenException : HttpStatusCodeException
+  public class HttpRequestTimeoutException : HttpStatusCodeException
   {
     //
     // Summary:
@@ -18,36 +21,36 @@ namespace HttpRequestException
     //   innerException:
     //     The exception that is the cause of the current exception, or a null reference
     //     (Nothing in Visual Basic) if no inner exception is specified.
-    public ForbiddenException(string message, Exception innerException)
-        : this(HttpStatusCode.Forbidden, message, innerException)
+    public HttpRequestTimeoutException(string message, Exception innerException)
+        : this(HttpStatusCode.RequestTimeout, message, innerException)
     {
     }
 
     //
     // Summary:
-    //     Initializes a new instance of the HttpRequestException.Forbidden
+    //     Initializes a new instance of the HttpRequestException.BadRequestException
     //     class.
-    public ForbiddenException()
+    public HttpRequestTimeoutException()
         : this(null)
     {
     }
 
     //
     // Summary:
-    //     Initializes a new instance of the HttpRequestException.Forbidden
+    //     Initializes a new instance of the HttpRequestException.BadRequestException
     //     class.
     //
     // Parameters:
     //   message:
     //     The message that describes the error.
-    public ForbiddenException(string message)
-        : this(HttpStatusCode.Forbidden, message, null)
+    public HttpRequestTimeoutException(string message)
+        : this(HttpStatusCode.RequestTimeout, message, null)
     {
     }
 
     //
     // Summary:
-    //     Initializes a new instance of the HttpRequestException.Forbidden
+    //     Initializes a new instance of the HttpRequestException.BadRequestException
     //     class.
     //
     // Parameters:
@@ -59,7 +62,7 @@ namespace HttpRequestException
     //
     //   innerException:
     //     The inner exception.
-    protected ForbiddenException(HttpStatusCode statusCode, string message = null, Exception innerException = null)
+    protected HttpRequestTimeoutException(HttpStatusCode statusCode, string message = null, Exception innerException = null)
         : base(statusCode, message, innerException)
     {
     }
@@ -77,7 +80,7 @@ namespace HttpRequestException
     //   context:
     //     The System.Runtime.Serialization.StreamingContext that contains contextual information
     //     about the source or destination.
-    protected ForbiddenException(SerializationInfo info, StreamingContext context)
+    protected HttpRequestTimeoutException(SerializationInfo info, StreamingContext context)
         : base(info, context)
     {
     }

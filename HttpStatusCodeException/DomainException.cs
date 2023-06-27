@@ -1,4 +1,3 @@
-using System;
 using System.Runtime.Serialization;
 
 namespace HttpRequestException
@@ -11,14 +10,14 @@ namespace HttpRequestException
   {
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.DomainException class.
+    //     Initializes a new instance of the HttpRequestException.DomainException class.
     public DomainException()
     {
     }
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.DomainException class.
+    //     Initializes a new instance of the HttpRequestException.DomainException class.
     //
     // Parameters:
     //   message:
@@ -30,7 +29,7 @@ namespace HttpRequestException
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.DomainException class.
+    //     Initializes a new instance of the HttpRequestException.DomainException class.
     //
     // Parameters:
     //   message:
@@ -46,7 +45,7 @@ namespace HttpRequestException
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.DomainException class.
+    //     Initializes a new instance of the HttpRequestException.DomainException class.
     //
     // Parameters:
     //   info:

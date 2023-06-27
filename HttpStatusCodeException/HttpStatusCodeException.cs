@@ -20,7 +20,7 @@ namespace HttpRequestException
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.HttpStatusCodeException
+    //     Initializes a new instance of the HttpRequestException.HttpStatusCodeException
     //     class.
     //
     // Parameters:
@@ -40,7 +40,7 @@ namespace HttpRequestException
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.HttpStatusCodeException
+    //     Initializes a new instance of the HttpRequestException.HttpStatusCodeException
     //     class.
     public HttpStatusCodeException()
         : this(null)
@@ -49,7 +49,7 @@ namespace HttpRequestException
 
     //
     // Summary:
-    //     Initializes a new instance of the .Common.Exceptions.HttpStatusCodeException
+    //     Initializes a new instance of the HttpRequestException.HttpStatusCodeException
     //     class.
     //
     // Parameters:
